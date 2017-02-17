@@ -2,24 +2,21 @@
 public class VideoStoreApp {
 
 	public static void main(String[] args) {
-
-		RentalCalculator calculator = new RentalCalculator();
-		Movie regular = new Movie("WCCI", "regular");
-		Movie childrens = new Movie("Up", "childrens");
-		Movie newRelease = new Movie("Dr Strnage", "new release");
+		RentalStatement rentalStatement = new RentalStatement();
 		
-		System.out.println("amount due = " + calculator.calculate(regular, 2));
-		System.out.println("amount due = " + calculator.calculate(regular, 3));
-		System.out.println("amount due = " + calculator.calculate(regular, 5));
+		Movie theCell = new RegularMovie("The Cell");
+		Movie up = new ChildrensMovie("Up");
+		Movie drStrange = new NewReleaseMovie("Dr Strnage");
 		
-		System.out.println("amount due = " + calculator.calculate(childrens, 3));
-		System.out.println("amount due = " + calculator.calculate(childrens, 4));
-		System.out.println("amount due = " + calculator.calculate(childrens, 5));
-
-		System.out.println("amount due = " + calculator.calculate(newRelease, 1));
-		System.out.println("amount due = " + calculator.calculate(newRelease, 5));
-
+		Rental regular = new Rental(theCell, 3);
+		Rental childrens = new Rental(up, 3);
+		Rental newRelease = new Rental(drStrange, 1);
 		
+		rentalStatement.add(regular);
+		rentalStatement.add(childrens);
+		rentalStatement.add(newRelease);
+		
+		rentalStatement.print();
 	}
 
 }
