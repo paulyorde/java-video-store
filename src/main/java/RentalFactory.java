@@ -1,11 +1,13 @@
 public class RentalFactory {
 	
-	public Movie createRental(String type) {
+	// pass in file , read file, get type
+	public static Movie createRental(String type) {
 		Movie movie;
 		
 		switch(type) {
 			case "regular":
-				movie = new RegularMovie(type);
+				// get title from file
+				movie = new RegularMovie("Mr. Mom");
 				break;
 			default:
 				throw new IllegalArgumentException();
