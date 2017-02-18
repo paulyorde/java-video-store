@@ -2,8 +2,7 @@
 public abstract class MovieStore {
 	
 	public Movie rent(String priceCode) {
-		Movie movie = createMovie(priceCode);
-		return movie;
+		return createMovie(priceCode);
 	}
 	
 	public Rental createRental(Movie movie, int days) {
