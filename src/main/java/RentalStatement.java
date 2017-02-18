@@ -16,10 +16,12 @@ public class RentalStatement {
 		for(Rental rental : rentals) {
 			System.out.println(String.format("Move Type is: %s  %n"
 					+ "Movie Title is: %s %n"
-					+ "Movie price is: %.2f %n",
+					+ "Movie price is: %.2f %n"
+					+ "Movie days allowed: %d %n",
 					rental.getPriceCode(),
 					rental.getTitle(),
-					rental.calculateFees()));
+					rental.calculateFees(),
+					rental.getDays()));
 		}
 	}
 }

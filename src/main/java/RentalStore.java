@@ -1,8 +1,8 @@
 
 public class RentalStore {
-	RentalFactory factory;
+	MovieFactory factory;
 	
-	public RentalStore(RentalFactory factory) {
+	public RentalStore(MovieFactory factory) {
 		this.factory = factory;
 	}
 	

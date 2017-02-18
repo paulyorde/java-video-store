@@ -20,5 +20,9 @@ public class Rental {
 	public String getPriceCode() {
 		return rented.getPriceCode();
 	}
+	
+	public int getDays() {
+		return days;
+	}
 }
 
