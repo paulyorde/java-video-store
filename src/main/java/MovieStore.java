@@ -2,8 +2,7 @@
 public abstract class MovieStore {
 	
 	public Movie rent(String priceCode) {
-		Movie movie;
-		movie = createMovie(priceCode);
+		Movie movie = createMovie(priceCode);
 		return movie;
 	}
 	
