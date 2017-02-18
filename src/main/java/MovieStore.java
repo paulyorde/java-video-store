@@ -1,11 +1,15 @@
 
 public abstract class MovieStore {
 	
-	public Movie rent(String movieType) {
+	public Movie rent(String priceCode) {
 		Movie movie;
-		movie = createMovie(movieType);
+		movie = createMovie(priceCode);
 		return movie;
 	}
 	
-	public abstract Movie createMovie(String movieType);
+	public Rental createRental(Movie movie, int days) {
+		return new Rental(movie, days);
+	}
+	
+	public abstract Movie createMovie(String priceCode);
 }

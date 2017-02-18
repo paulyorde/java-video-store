@@ -4,6 +4,7 @@ import java.util.Collection;
 public class RentalStatement {
 	Collection<Rental> rentals = new ArrayList<>();
 	
+	
 	public void add(Rental toAdd) {
 		rentals.add(toAdd);
 	}

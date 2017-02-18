@@ -2,9 +2,9 @@
 public class VideoMovieStore extends MovieStore {
 
 	@Override
-	public Movie createMovie(String movieType) {
+	public Movie createMovie(String priceCode) {
 		Movie movie;
-		switch(movieType) {
+		switch(priceCode) {
 			case "regular":
 				movie = new RegularMovie("Mr Mom");
 				break;
