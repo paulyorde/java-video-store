@@ -3,9 +3,9 @@ public class VideoStoreApp {
 	public static void main(String[] args) {
 			RentalStatement rentalStatement = new RentalStatement();
 			
-		    MovieStore videoStore = new VideoMovieStore();
-		    Movie mrMom = videoStore.rent("regular");
-		    Movie aladdin = videoStore.rent("childrens");
+		    	MovieStore videoStore = new VideoMovieStore();
+		    	Movie mrMom = videoStore.rent("regular");
+		    	Movie aladdin = videoStore.rent("childrens");
 		  	Movie cureForWellness = videoStore.rent("new release");
 		  	
 		  	Rental regular = videoStore.createRental(mrMom, 2);
