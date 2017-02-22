@@ -1,0 +1,32 @@
+describe 
+
+Policy - baseFee + (extraDays - days) * extendedFee 
+	- against a rental
+
+Movie Store - movieRentals( policy and rental(days,movie(priceCode)
+
+Movie - title, description, rating (all data)
+
+
+Rental - numDays , movie(priceCode)
+
+Rental Statement - printOut foreach MovieRental 
+
+
+
+flow
+User finds movie -- new Movie -- actual priceCode is in specificmovie
+takes to cashier
+Store-cashier scans movie (which is creating a rental) i.e. - 
+cahsier enters number of days -- new Rental(movie(priceCode), days)
+policy is calculated - rental days * price
+price is returned - rental statement
+
+
+OO
+store returns a rental - a policy and title for n days 
+	
+
+
+
+

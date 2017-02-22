@@ -1,22 +1,24 @@
-import java.math.BigDecimal;
 
-public abstract class Movie {
-
-	String title;
-	String priceCode;
+public class Movie {
+	private String title;
+	private String priceCode;
 
 	public Movie(String title, String priceCode) {
 		this.title = title;
-		this.priceCode = priceCode;
+		this.title = priceCode;
 	}
-
-	public abstract BigDecimal caclulateFees(int days);
-
+	
 	public String getTitle() {
 		return title;
 	}
-
+	
 	public String getPriceCode() {
 		return priceCode;
 	}
+	
+	
+
 }
+
+
+

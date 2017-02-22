@@ -1,24 +1,19 @@
-import java.math.BigDecimal;
 
 public class Rental {
 	private Movie rented;
-	private int   days;
+	private int days;
 	
-	public Rental(Movie movie, int days) {
-		rented = movie;
+
+	public Rental(int days, Movie rented) {
 		this.days = days;
+		this.rented = rented;
 	}
-	
-	public BigDecimal calculateFees() {
-		return rented.caclulateFees(days);
+
+	public int getDays() {
+		return days;
 	}
-	
-	public String getTitle() {
-		return rented.getTitle();
-	}
-	
-	public String getPriceCode() {
-		return rented.getPriceCode();
+
+	public Movie getRented() {
+		return rented;
 	}
 }
-
